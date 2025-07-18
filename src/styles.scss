@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'primeicons/primeicons.css';
+/* You can add global styles to this file, and also import other style files */
+
+// :root {
+//   --body-bg: var(--p-surface-50);
+//   --body-text-color: var(--p-surface-900);
+//   --card-border: 1px solid var(--border-color);
+//   --card-bg: var(--p-surface-0);
+//   --border-color: var(--p-surface-200);
+//   --text-color: var(--p-surface-700);
+//   --overlay-background: #ffffff;
+// }
+
+// :root[class='p-dark'] {
+//   --body-bg: var(--p-surface-950);
+//   --body-text-color: var(--p-surface-50);
+//   --card-border: 1px solid transparent;
+//   --card-bg: var(--p-surface-900);
+//   --border-color: rgba(255, 255, 255, 0.1);
+//   --text-color: var(--p-surface-0);
+//   --overlay-background: var(--p-surface-900);
+// }
+
+:root {
+    --primary-color: var(--p-primary-color);
+    --primary-contrast-color: var(--p-primary-contrast-color);
+    --text-color: var(--p-text-color);
+    --text-color-secondary: var(--p-text-muted-color);
+    --surface-border: var(--p-content-border-color);
+    --surface-card: var(--p-content-background);
+    --surface-hover: var(--p-content-hover-background);
+    --surface-overlay: var(--p-overlay-popover-background);
+    --transition-duration: var(--p-transition-duration);
+    --maskbg: var(--p-mask-background);
+    --content-border-radius: var(--p-content-border-radius);
+    --layout-section-transition-duration: 0.2s;
+    --element-transition-duration: var(--p-transition-duration);
+    --focus-ring-width: var(--p-focus-ring-width);
+    --focus-ring-style: var(--p-focus-ring-style);
+    --focus-ring-color: var(--p-focus-ring-color);
+    --focus-ring-offset: var(--p-focus-ring-offset);
+    --focus-ring-shadow: var(--p-focus-ring-shadow);
+}
+:root {
+    --surface-ground: var(--p-surface-100);
+    --code-background: var(--p-surface-900);
+    --code-color: var(--p-surface-200);
+}
+:root[class*='p-dark'] {
+    --surface-ground: var(--p-surface-950);
+    --code-background: var(--p-surface-800);
+    --code-color: var(--p-surface-100);
+}
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    background-color: var(--surface-ground);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.layout-wrapper {
+    min-height: 100vh;
+}
+
+// html {
+//   font-size: 14px;
+//   overflow: hidden; 
+// }
+
+
+// body {
+//   margin: 0px;
+//   min-height: 100%;
+//   overflow: hidden; 
+//   overflow-x: hidden;
+//   overflow-y: auto;
+//   background-color: var(--body-bg);
+//   font-weight: normal;
+//   color: var(--body-text-color);
+//   padding: 1rem;
+// }
+// .card {
+//   background: var(--surface-card);
+//   padding: 2rem;
+//   border-radius: 10px;
+//   margin-bottom: 1rem;
+// }
+// .p-datatable .p-datatable-tbody > tr > td {
+//   text-align: left;
+//   border: 1px solid #e5e7eb;
+//   border-width: 0 0 1px 0;
+//   padding: 0.1rem 1rem;
+// }
+
+// .layout-container {
+//   display: flex;
+//   height: 100vh;
+// }
+
+// .sidebar {
+//   width: 180px;
+//   // background: #f9f9f9;
+//   padding: 1rem;
+// }
+
+// .main-content {
+//   flex: 1;
+//   padding: 1.5rem;
+//   overflow-y: auto;
+// }
+/* Target custom toast with severity 'custom-purple' */
+/* Custom purple toast style */
+.p-toast .purple-toast {
+  background: linear-gradient(to right, #2a1a3f, #1d1230); /* deep purple gradient */
+  border-left: 4px solid #a259ff; /* vibrant purple */
+  color: #d9b3ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(162, 89, 255, 0.25);
+}
+
+/* Icon and close button */
+.p-toast .purple-toast .p-toast-message-icon,
+.p-toast .purple-toast .p-toast-icon-close {
+  color: #a259ff;
+}
+
+/* Bold summary */
+.p-toast .purple-toast .p-toast-summary {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #c08cff;
+}
+
+/* Detail text */
+.p-toast .purple-toast .p-toast-detail {
+  font-size: 0.875rem;
+  color: #e8d6ff;
+}
+
